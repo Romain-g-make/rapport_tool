@@ -1,0 +1,15 @@
+Page de couverture – Titre du cas, date, nom et coordonnées de l'analyste
+
+Résumé exécutif – Aperçu en un paragraphe des résultats
+
+Portée et objectifs – Ce qui a été investigué et pourquoi
+
+Méthodologie – Outils, sources et techniques de recherche utilisées
+
+Résultats – Résultats structurés avec liens, captures d'écran et contexte
+
+Analyse – Perspectives, connexions, motifs et pertinence
+
+Conclusion – Résumé des points clés
+
+Annexe – Données brutes, horodatages, journaux, captures d'écran supplémentaires
