@@ -1,16 +1,27 @@
 <html>
     <head>
-        <script src="index.ts" defer></script>
     </head>
  
     <body>
         <form>
-            <label for="name">Nom</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom" required>
-            
-            <button type="button" id="monBouton">Valider</button>
+            <div class="bloc1">
+                <p>Titre : </p>
+                <input type="text" id="titre" placeholder="Entrez un titre ..." required>
+            </div>
 
-            <p id="nomReturn"></p>
+            <div class="bloc2">
+                <p>Information : </p>
+                <input type="text" id="information" placeholder="Entrez une information ..." required>
+            </div>
+
+            <button type="button" id="boutonValider">Valider</button>
+            
+            <p id="titreReturn"></p>
+            <p id="informationReturn"></p>
         </form>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+        <script src="index.js" defer></script>
     </body>
 </html>
