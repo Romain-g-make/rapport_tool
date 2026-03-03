@@ -1,10 +1,10 @@
-const bouton = document.getElementById("monBouton") as HTMLInputElement;
+const bouton = document.getElementById("boutonValider") as HTMLInputElement;
 
 bouton.addEventListener("click", function() {
-    let baliseNom = document.getElementById('name') as HTMLInputElement;
-    let nom = baliseNom.value;
-    console.log(nom);
+    let baliseTitre = document.getElementById('titre') as HTMLInputElement;
+    let titre = baliseTitre.value;
+    console.log(titre);
 
-    const nomReturn = document.getElementById('nomReturn')!;
-    nomReturn.textContent = nom;
+    const titreReturn = document.getElementById('titreReturn')!;
+    titreReturn.textContent = titre;
 });
