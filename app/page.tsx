@@ -68,7 +68,8 @@ export default function Home() {
     const saveNewInfo = () => {
         const id = info.identity
         const emp = info.employment
-        setAllInfo(prev => [...prev, { identity: { first_name: id.first_name, last_name: id.last_name, dob: id.birth_place, birth_place: id.birth_place, address: id.address, phone_number: id.phone_number, gender: id.gender, email: id.email, ip: id.ip }, employment: { employer: emp.employer, employer_address: emp.employer_address, employer_phone: emp.employer_phone, employer_type: emp.employer_type }, title: info.title, value: info.value, imageName: info.imageName, imageUrl: info.imageUrl }])
+        setAllInfo(prev => [...prev, { identity: { first_name: id.first_name, last_name: id.last_name, dob: id.dob, birth_place: id.birth_place, address: id.address, phone_number: id.phone_number, gender: id.gender, email: id.email, ip: id.ip }, employment: { employer: emp.employer, employer_address: emp.employer_address, employer_phone: emp.employer_phone, employer_type: emp.employer_type }, title: info.title, value: info.value, imageName: info.imageName, imageUrl: info.imageUrl }])
+        console.log(allInfo);
         disableNewInfo()
     }
 
@@ -88,8 +89,9 @@ export default function Home() {
                     ) : (
                         <div>
                             {allInfo.map((v, k) => (
-                                <div>
-                                    <p>[ {k} ] - {v.value}</p>
+                                <div key={k}>
+                                    <p>Prénom : {v.identity.first_name}</p>
+                                    <p>{v.identity.last_name}</p>
                                 </div>
                             ))}
                         </div>
